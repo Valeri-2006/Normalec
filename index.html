@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NormaLec | Validación normativa de instalaciones eléctricas</title>
+  <meta name="description" content="Plataforma de automatización y apoyo al diseño de instalaciones eléctricas: validación normativa asistida por un sistema multiagente de IA.">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo">⚡ NormaLec</a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre el proyecto</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN (único por página) ===================== -->
+  <main>
+
+    <!-- ---------- SECCIÓN 1: INICIO ---------- -->
+    <section id="inicio" class="hero" aria-labelledby="inicio-titulo">
+      <div class="hero-content">
+        <h1 id="inicio-titulo">Validación normativa sin depender de una sola persona</h1>
+        <p>
+          Plataforma de automatización que encapsula el conocimiento normativo de RETIE y NTC 2050
+          para reducir el reproceso en el diseño de instalaciones eléctricas.
+        </p>
+        <div class="hero-cta">
+          <a href="#sobre-mi" class="btn btn-primary">Conocer el proyecto</a>
+          <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- SECCIÓN 2: SOBRE MÍ / PROYECTO ---------- -->
+    <section id="sobre-mi" class="sobre-mi" aria-labelledby="sobre-mi-titulo">
+      <h2 id="sobre-mi-titulo">Sobre el proyecto</h2>
+      <p class="intro-texto">
+        Proyecto de grado de cuatro semestres desarrollado en conjunto con Ingelecol, una firma
+        de ingeniería eléctrica de siete personas en Bogotá dedicada al diseño de instalaciones
+        residenciales para radicación ante Enel-Codensa. El diagnóstico inicial mostró que el
+        100% de los ingenieros reporta reproceso costoso y ciclos de corrección frecuentes, y que
+        el 100% depende de un único ingeniero senior como autoridad normativa. NormaLec busca
+        distribuir ese conocimiento tácito sin eliminar la supervisión humana.
+      </p>
+
+      <div class="cards-container">
+        <article class="card">
+          <h3>Motor de reglas versionado</h3>
+          <p>Núcleo determinístico que encapsula las causas conocidas de rechazo de Enel-Codensa, con trazabilidad completa.</p>
+        </article>
+        <article class="card">
+          <h3>Sistema multiagente de IA</h3>
+          <p>Agente RAG normativo con citación verificable, agente de verificación de reglas y agente de interpretación de ambigüedades.</p>
+        </article>
+        <article class="card">
+          <h3>Extracción de datos BIM</h3>
+          <p>Adaptador vía Dynamo para extraer parámetros directamente de los modelos de Revit, sin pasos intermedios manuales.</p>
+        </article>
+      </div>
+
+      <p class="principio-etico">
+        <strong>Principio no negociable:</strong> la IA nunca aprueba, solo sugiere. El ingeniero
+        humano conserva siempre la decisión final.
+      </p>
+    </section>
+
+    <!-- ---------- SECCIÓN 3: CONTACTO ---------- -->
+    <section id="contacto" class="contacto" aria-labelledby="contacto-titulo">
+      <h2 id="contacto-titulo">Contáctanos</h2>
+      <p>¿Quieres conocer más sobre el proyecto o eres parte de Ingelecol? Escríbenos.</p>
+
+      <form class="form-contacto" action="#" method="post" novalidate>
+
+        <div class="form-field">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required
+                 aria-describedby="nombre-ayuda">
+          <small id="nombre-ayuda">Escribe tu nombre y apellido.</small>
+        </div>
+
+        <div class="form-field">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required
+                 aria-describedby="correo-ayuda">
+          <small id="correo-ayuda">Usaremos este correo solo para responder tu mensaje.</small>
+        </div>
+
+        <fieldset class="form-field">
+          <legend>Motivo de contacto</legend>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="motivo" value="ingenieria" required>
+              Soy ingeniero de Ingelecol
+            </label>
+            <label>
+              <input type="radio" name="motivo" value="academico">
+              Consulta académica
+            </label>
+            <label>
+              <input type="radio" name="motivo" value="otro">
+              Otro
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="form-field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required
+                    aria-describedby="mensaje-ayuda"></textarea>
+          <small id="mensaje-ayuda">Cuéntanos brevemente qué necesitas.</small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 NormaLec — Proyecto de grado, en colaboración con Ingelecol.</p>
+  </footer>
+
+</body>
+</html>
